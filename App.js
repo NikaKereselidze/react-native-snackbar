@@ -6,7 +6,10 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safeAreaView}>
       <View style={styles.container}>
-        <Button title="Show" onPress={() => SnackbarStatus.snackbar.show()} />
+        <Button
+          title="Show"
+          onPress={() => SnackbarStatus.snackbar.showBar()}
+        />
       </View>
 
       <Snackbar ref={(ref) => (SnackbarStatus.snackbar = ref)} />
